@@ -1,40 +1,31 @@
-# Movie Star
+# Movie Collection Rank Calculator
 
-A simple and efficient tool to calculate the number of movies a person has watched based on their DVD, Blu-ray, and UltraViolet collections.
+## Project Summary
 
-## Features
+This JavaScript script validates and calculates a user's movie collection ranking based on input values for DVDs, Blu-rays, and UltraViolets. It ensures inputs are not left blank and only accept positive values.
 
-- User-friendly interface
-- Real-time movie count calculations
-- Supports multiple movie formats
+### Features
 
-## Usage
+- Validates and parses input values for DVDs, Blu-rays, and UltraViolets.
+- Calculates the total number of movies in the collection.
+- Displays membership status based on the total:
+  - Bronze star member for collections under 50 movies.
+  - Silver star member for collections between 50 and 100 movies.
+  - Gold star member for collections exceeding 100 movies.
+- Updates an image to visually represent the membership status.
+- Provides immediate feedback to users upon clicking the rank button.
 
-To use Movie Star, simply enter the number of DVDs, Blu-rays, and UltraViolets in your collection. The total number of movies in your collection will then be calculated and displayed in real-time.
+### Usage
 
-## Styling
+To use the script:
+1. Ensure valid inputs for DVDs, Blu-rays, and UltraViolets are provided.
+2. Click the "Rank" button to see the calculated membership status and corresponding image update.
 
-The styling for Movie Star is handled using CSS. Here's a snippet of the code used for styling:
+### Example
 
-```css
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    flex-direction: column;
-}
+If a user inputs:
+- DVDs: 20
+- Blu-rays: 30
+- UltraViolets: 25
 
-form {
-    text-align: center;
-}
-
-h1 {
-    font-size: 3em;
-}
-
-h3 {
-    font-size: 2em;
-}
+Upon clicking the "Rank" button, the script will display:
