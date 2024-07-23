@@ -1,40 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>React App - Dashboard</title>
-    <link rel="stylesheet" href="styles.css" />
 
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8" />
+  <title>React App - Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+
+</head>
+
+<body>
+  <div class="container">
     <h1>Movie Star</h1>
     <h3>Enter the total number of movies you have in multiple formats and determine what ranking they are in a movie
-        club.</h3>
-
+      club.</h3>
+  
     <form id="problem2">
+  
+      <!-- Input for the number of DVDs. Make sure this can accept only positive whole numbers.  -->
+      <label for="dvds">Amount Of DVDs</label> <br> <input type="number" name="dvds" id="dvds" required>
+      <br><br>
+      <!-- Input for the number of Blu-Rays. Make sure this can accept only positive whole numbers. -->
+      <label for="blue-ray">Amount of Blue-Rays</label> <br> <input type="number" name="blue-rays" id="blue-rays"
+        required>
+      <br><br>
+      <!-- Input for the number of UltraViolets. Make sure this can accept only positive whole numbers. -->
+      <label for="ultra-violet">Amount of UltraViolets</label> <br> <input type="number" name="ultra-violets"
+        id="ultra-violets" required>
+      <br><br>
+  
+      <!-- A button that starts the process. -->
+      <input type="button" name="rank-btn" id="rank-btn" value="RANK">
+    </form>
+  
+    <!-- An empty H1 tag that will hold the final results: Total Number Of Movies Owned -->
+    <h1 id="rank-result"></h1>
+  
+    <!-- An Image that will change based on the number of movies the user owns  -->
+    <img id="rank-img" src="#" alt="">
 
-        <!-- Input for the number of DVDs. Make sure this can accept only positive whole numbers.  -->
-        <label for="dvds">Amount Of DVDs</label> <br> <input type="number" name="dvds" id="dvds" required>
-        <br><br>
-        <!-- Input for the number of Blu-Rays. Make sure this can accept only positive whole numbers. -->
-        <label for="blue-ray">Amount of Blue-Rays</label> <br> <input type="number" name="blue-rays" id="blue-rays"
-            required>
-        <br><br>
-        <!-- Input for the number of UltraViolets. Make sure this can accept only positive whole numbers. -->
-        <label for="ultra-violet">Amount of UltraViolets</label> <br> <input type="number" name="ultra-violets"
-            id="ultra-violets" required>
-        <br><br>
+  </div>
 
-        <!-- A button that starts the process. -->
-        <input type="button" name="rank-btn" id="rank-btn" value="RANK">
+</body>
+<script src="main.js"></script>
 
-        <!-- An empty H1 tag that will hold the final results: Total Number Of Movies Owned -->
-        <h1 id="rank-result"></h1>
-
-        <!-- An Image that will change based on the number of movies the user owns  -->
-        <img id="rank-img" src="#" alt="">
-
-  </body>
-  <script src="main.js" ></script>
 </html>
-    
